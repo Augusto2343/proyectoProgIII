@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.tarjetaTool{
+  flex:1;
+  transition-duration:  1s;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+
+  background-size: 300% 300%;
+  
+  background-image: linear-gradient(230deg,rgba(226, 7, 7, 0.11),rgba(223, 8, 8, 0.384), rgba(223, 8, 8, 0.575), rgba(223, 8, 8, 0.856)) ;
+  background-position: 100% 100%;
+}
+.titleCard{
+  margin-top:20px;
+}
+.categoriasCards{
+  display: flex;
+  align-items: start;
+  gap:2rem;
+  }
+.imgCard{
+  border-radius: 15px 0 0 15px;
+}
+.noticiaCard{
+  background-color: rgba(120, 120, 120,0.2);
+  border-radius:15px;
+  border:0.7px solid #9e9e9e
+}
+.tarjetaTool:hover{
+  animation:cardHover 1s;
+  background-position: 0% 0%;
+
+}
+
+
+.iconToolCard{
+  z-index: 122;
+  transition: 1s;
+}
+.iconToolCard.active{
+  transform-origin: top;
+  transform: translateY(30%);
+
+}
+.textCard{
+  transition: 1s;
+
+  opacity: 0;
+  z-index: 119;
+  transform-origin: top;
+  transform: translateY(5%);
+}
+.textCard.active{
+  opacity: 1;
+  z-index: 121;
+  transform-origin: top;
+  transform: translateY(-5%);
+}
+
+.acercaRallySect{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+}
+
+.categorias{
+  display:flex;
+  flex-flow:column nowrap;
+  background-image: linear-gradient(0deg,rgba(223, 8, 8, 0), rgba(223, 8, 8, 0.340));
+  padding: 2rem;
+  gap: 1rem;
+}
+.categorias div{
+  flex: 1;
+}
+.cardCateg{
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding:1rem;
+}
+
+.iconNew {
+  height:10px;
+  width:10px;
+  border-radius:100%;
+  background-color:rgba(255, 0, 0, 0.425);
+  position:absolute;
+  top:7%;
+  right:2%;
+  box-shadow: 1px 1px 15px rgba(255,0,0,0.3) ; 
+
+  animation: 1s newIcon infinite linear;
+}
+@keyframes newIcon{
+  0%{
+    background-color:rgba(255, 0, 0, 0.425);
+    box-shadow: 1px 1px 15px rgba(255,0,0,0.3) ; 
+  }
+  100%{
+    background-color:rgba(255, 0, 0, 1);
+    box-shadow: 1px 1px 15px rgba(255,0,0,1) ; 
+  }
+}
+.imgIdentityFt{
+  width:15rem;
+}
+footer{
+  padding:4rem;
+  background:linear-gradient(to bottom,
+    #970000e3,
+    #0a0a0a
+  );
+}
+.footerSection{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-evenly;
+  padding-bottom:4rem;
+}
+.navFooter{
+  display:flex;
+  flex-flow:column nowrap;
+  gap:1rem;
+}
+.footerLink{
+  position:relative;
+  text-decoration:none;
+  color:white;
+}
+.titleSection{
+  font-size:20px;
+  margin-bottom: 10px;
+}
+.footerLink::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-3px;
+  width:0;
+  height:3px;
+  border-radius:3px;
+  background:#e90e0e;
+  transition: width .3s ease;
+}
+.footerLink:hover::after{
+  width:100%;
+}
+.toast{
+  max-width:300px;
+  height:auto;
+  position:fixed;
+  border:0.3px solid #9e9e9e;
+}
+.info{
+  background:linear-gradient(120deg,#2234,rgba(0, 0, 255, 0.267));
+}
+.info{
+  background:linear-gradient(120deg,#2234,rgba(0, 0, 255, 0.267));
+}
