@@ -7,16 +7,19 @@ import Banner from './components/Banner'
 import MainPage from './components/MainPage'
 import Footer from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import BtnVolverArriba from './components/BtnVolverArriba'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <Navbar>  </Navbar>
       <Routes>
-        <Route path='/' element={<MainPage></MainPage>
-}>        
+        <Route path='/' element={<MainPage></MainPage>}>        
         </Route>
       </Routes>
+        <BtnVolverArriba></BtnVolverArriba>
       <Footer></Footer>
     </>
   )

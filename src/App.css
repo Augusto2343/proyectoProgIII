@@ -19,8 +19,8 @@
   margin-top:20px;
 }
 .categoriasCards{
-  display: flex;
-  align-items: start;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
   gap:2rem;
   }
 .imgCard{
@@ -63,25 +63,32 @@
 }
 
 .acercaRallySect{
+  height: 100vh;
   margin-bottom: 2rem;
   margin-top: 2rem;
 
 }
 
 .categorias{
-  display:flex;
-  flex-flow:column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
   background-image: linear-gradient(0deg,rgba(223, 8, 8, 0), rgba(223, 8, 8, 0.340));
   padding: 2rem;
   gap: 1rem;
 }
-.categorias div{
-  flex: 1;
-}
+
 .cardCateg{
-  border: 1px solid #fff;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
-  padding:1rem;
+  flex: 1;
+  box-shadow: 2px 2px 29px #221818 ;
+}
+.cardCateg p{
+  text-align: justify;
+}
+.cardCateg img{
+  max-width: 14rem;
 }
 
 .iconNew {
@@ -161,4 +168,195 @@ footer{
 }
 .info{
   background:linear-gradient(120deg,#2234,rgba(0, 0, 255, 0.267));
+}
+.navbarHeader{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.8s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background:linear-gradient(280deg,#4d4d4d5f,#0a0a0a) ;
+}
+.navbarHeader:hover{
+  padding: 1.3rem;
+  background:linear-gradient(280deg,#4d4d4d,#0a0a0a) ;
+
+}
+.navbarHeader.ocultarHeader{
+  transform: translateY(-120px);
+  opacity: 0;
+}
+.navbar{
+  display: flex; 
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 3rem;
+  width: auto;
+}
+.menuWBtn{
+  position: relative;
+  display:flex;
+
+  justify-content: center;
+}
+.menuEscuderias{
+  transition: 0.7s;
+  transform: translateY(4rem);
+  opacity: 1;
+  display: flex;
+  width: 220%;
+  flex-flow: column;
+  align-items: start;
+  justify-content: center;
+  position: absolute;
+  background:linear-gradient(280deg,#4d4d4d5f,#0a0a0a) ;
+  padding:1rem;
+  border-radius: 15px;
+
+}
+.btnVolverArriba{
+  transition: 0.5s;
+  position: fixed;
+  top: 85%;
+  right:9%;
+
+}
+.btnVolverArriba:hover{
+  animation: bounceBtnSubir 0.9s  ease-in-out infinite;
+}
+@keyframes bounceBtnSubir {
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+
+}
+.hideMenu{
+  transform: translateY(6rem);
+  opacity: 0;
+  
+}
+.logoPagHeader{
+  max-width: 6rem;
+}
+
+.history{
+    position:relative;
+
+}
+
+.sticky{
+
+    position:sticky;
+    top:0;
+
+    height:100vh;
+
+    display:flex;
+    flex-flow: column nowrap;
+
+    justify-content:space-evenly;
+    align-items:center;
+    flex-direction:column;
+
+}
+
+.story{
+
+    max-width:900px;
+
+    font-size:2rem;
+
+    text-align:center;
+
+    transition:
+        opacity .4s,
+        transform .4s;
+
+}
+
+.story span{
+
+    opacity:.12;
+
+    filter:blur(5px);
+
+    transform:translateY(10px);
+
+    transition:
+        opacity .35s,
+        filter .35s,
+        transform .35s;
+
+}
+.containerTextImgScroll{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.story span.visible{
+
+    opacity:1;
+
+    filter:blur(0);
+
+    transform:translateY(0);
+
+}
+
+.story.exit{
+
+    opacity:0;
+
+    transform:translateY(-80px);
+
+}
+
+.story.enter{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+.imgScroll{
+  transition: 0.4s;
+  opacity: 0;
+  transform:translateY(60px);
+}
+.imgScroll.visible{
+  opacity: 1;
+  transform:translateY(0);
+}
+.headerLink{
+  position:relative;
+  text-decoration:none;
+  color:white;
+}
+
+.headerLink::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-3px;
+  width:0;
+  height:3px;
+  border-radius:3px;
+  background:#e90e0e;
+  transition: width .3s ease;
+}
+.headerLink:hover::after{
+  width:100%;
 }

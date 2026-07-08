@@ -1,4 +1,7 @@
 @import "tailwindcss";
+*{
+  scroll-behavior: smooth;
+}
 body{
   background-color: #0a0a0a;
   color: #fff;
@@ -58,4 +61,39 @@ body{
 .titleFont{
   font-family: "Montserrat", sans-serif;
 
+}
+
+@media(min-width:1433px){
+  .bannContainer{
+    height: 550px;
+  }
+}
+@media(max-width:2025px){
+    .cardCateg{
+    padding: 1rem;
+  }
+}
+@media(min-width:2025px){
+    .bannContainer{
+    height: 950px;
+  }
+  .acercaRallySect{
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+  }
+  .cardAcercaRally{
+    gap: 2rem;
+  }
+  p{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 30px;
+  }
+  .textCard{
+    font-size: 20px;
+  }
+  .cardCateg{
+    padding: 4rem;
+  }
 }
