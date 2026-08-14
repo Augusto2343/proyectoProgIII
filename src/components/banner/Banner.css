@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+.containerBanner{
+
+    background-image:
+        radial-gradient(
+            circle at 45% 50%,
+            rgba(235, 10, 30, 0.45) 0%,
+            rgba(235, 10, 30, 0.20) 25%,
+            transparent 60%
+        ),
+        linear-gradient(
+            90deg,
+            #080808 0%,
+            #080808 20%,
+            rgba(8, 8, 8, 0.98) 35%,
+            rgba(8, 8, 8, 0.80) 45%,
+            rgba(8, 8, 8, 0.30) 60%,
+            transparent 75%
+        );
+        
+
+    background-size:
+        100% 100%,
+        100% 100%,
+        65%;
+
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat;
+
+    background-position:
+        center,
+        center,
+        right center;
+
+    height: 40rem;
+}
+.imgBanner{
+    
+}
+.bannerText{
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 2rem;
+    gap:1rem;
+}
+.bannerTitle{
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+
+}
+.cards{
+    display: flex;
+    flex-flow: row nowrap;
+    gap:1rem;
+
+}
+.cardBanner {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background-image: linear-gradient(120deg,#0a0a0a00,#4040402e,#0a0a0a00,#3434342b) ;
+    border: 0.5px solid #45444492;
+
+}
+.imgBanner {
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBanner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(25px);
+    opacity: .5;
+}
+.bannerImg{
+    width: 90%;
+    height: 90%;
+    z-index: 120;
+}

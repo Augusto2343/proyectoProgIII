@@ -29,7 +29,7 @@ const Navbar = () =>{
     return(
         <>
         <div className={`navbarHeader ${headerOpened ? "":"ocultarHeader"}`}>
-            <Link>
+            <Link to="/">
             <img src={logoPag} className="logoPagHeader" />
             </Link>
             <div className="navbar">
@@ -38,11 +38,13 @@ const Navbar = () =>{
                     <div className={`menuEscuderias ${isOpened ? "": "hideMenu"}`}>                
                         <Link className="headerLink">Ford M-sport</Link>
                         <Link className="headerLink">Hyndai WRT</Link>
-                        <Link className="headerLink">TGR WRT</Link>
+                        <Link to={"/tgrwrt"} className="headerLink">TGR WRT</Link>
                     </div>
                 </div>
                 
                 <Link className="headerLink">Posiciones del último Rally</Link>
+                <Link to="/contacto" className="headerLink">Contacto</Link>
+
             </div>
         </div>
         </>

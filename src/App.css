@@ -252,8 +252,7 @@ footer{
 
 .history{
     position:relative;
-
-}
+  }
 
 .sticky{
 
@@ -275,7 +274,7 @@ footer{
 
     max-width:900px;
 
-    font-size:2rem;
+    font-size:1.4rem;
 
     text-align:center;
 
@@ -359,4 +358,120 @@ footer{
 }
 .headerLink:hover::after{
   width:100%;
+}
+.contact-section{
+    margin-top: 10rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:80px 20px;
+    background:#0a0a0a;
+}
+
+.contact-form{
+    margin-top: 10rem;
+    margin-bottom:10rem;
+
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width:min(700px,100%);
+    background:#111;
+    border:1px solid rgba(233,14,14,.25);
+    border-radius:20px;
+    padding:40px;
+    color:#fff;
+    box-shadow:
+        0 0 20px rgba(233,14,14,.15),
+        0 0 60px rgba(233,14,14,.08);
+}
+
+.contact-form h2{
+    font-size:2.3rem;
+    margin-bottom:.5rem;
+    color:#fff;
+    text-align:center;
+}
+
+.contact-form p{
+    text-align:center;
+    color:#b8b8b8;
+    margin-bottom:35px;
+    line-height:1.6;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-bottom:22px;
+}
+
+.form-group label{
+    color:#fff;
+    font-weight:600;
+    letter-spacing:.5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    background:#161616;
+    color:#fff;
+    border:2px solid transparent;
+    border-radius:12px;
+    padding:14px 16px;
+    outline:none;
+    transition:.25s;
+    font-size:1rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    color:#7b7b7b;
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover{
+    border-color:rgba(233,14,14,.35);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#e90e0e;
+    box-shadow:0 0 0 4px rgba(233,14,14,.18);
+}
+
+.form-group textarea{
+    resize:vertical;
+    min-height:170px;
+}
+
+.contact-form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#e90e0e;
+    color:#fff;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:.25s;
+    letter-spacing:1px;
+}
+
+.contact-form button:hover{
+    transform:translateY(-3px);
+    background:#ff2323;
+    box-shadow:
+        0 10px 25px rgba(233,14,14,.35),
+        0 0 25px rgba(233,14,14,.25);
+}
+
+.contact-form button:active{
+    transform:translateY(0);
 }
