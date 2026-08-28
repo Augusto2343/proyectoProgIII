@@ -24,7 +24,6 @@ const MainPage = () =>{
         <Toolbar></Toolbar>
         <AcercaRally></AcercaRally>
         <Categorias/>
-        <UltimasNoticias/>
         </>
     )
 }

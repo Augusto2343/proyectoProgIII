@@ -1,7 +1,22 @@
 import imgBann from "/imgBannHom.avif"
 import "./Banner.css"
 import { Calendar, Trophy } from "lucide-react"
+import { useEffect, useState } from "react";
 const Banner = ({contentBanner}) =>{
+        const [screenWdt,setScreenWdt] = useState();
+        useEffect( () =>{
+            const getScreenWidth = async() =>{
+                const screenWidth = window.innerWidth;
+    
+                 setScreenWdt(screenWidth);
+            }
+            window.addEventListener("resize",getScreenWidth);
+    
+            return () =>{
+                window.removeEventListener("resize",getScreenWidth);
+            }
+    
+        },[])
     return(
         <>
         {

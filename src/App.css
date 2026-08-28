@@ -475,3 +475,51 @@ footer{
 .contact-form button:active{
     transform:translateY(0);
 }
+@media (max-width:1200px){
+  .toolbar{
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .tarjetaTool{
+    align-items: center;
+    padding: 1rem;
+    flex:1;
+  }
+}
+@media (max-width:1000px){
+  .categoriasCards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width:892px) {
+  .navbarHeader{
+    grid-template-columns: 0.5fr 2fr;
+  }
+  span.visible{
+    font-size: 1.1rem;
+  }
+}
+@media (max-width:630px){
+  .toolbar{
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+  footer{
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .imgIdentityFt{
+    width: 10rem;
+  }
+  .tarjetaTool{
+    border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+
+  }
+  .categoriasCards{
+    grid-template-columns: 1fr;
+  }
+}
