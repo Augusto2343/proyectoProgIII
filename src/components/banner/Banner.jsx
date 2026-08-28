@@ -24,9 +24,9 @@ const Banner = ({contentBanner}) =>{
                     backgroundImage: `
                                 radial-gradient(
                                     circle at 90% 0%,
-                                    rgba(235, 10, 29, 0.4) 0%,
-                                    rgba(235, 10, 30, 0.25) 25%,
-                                    rgba(235, 10, 30, 0.08) 45%,
+                                    ${contentBanner.enfasisColor}a1 0%,
+                                    ${contentBanner.enfasisColor}33  25%,
+                                    ${contentBanner.enfasisColor}00  45%,
                                     transparent 65%
                                 ),
                                 linear-gradient(
@@ -42,9 +42,7 @@ const Banner = ({contentBanner}) =>{
                             `,
 
                             backgroundSize: `
-                                100% 100%,
-                                100% 100%,
-                                65%
+                            ${contentBanner.bannerSize}
                             `,
 
                             backgroundRepeat: `
@@ -54,9 +52,7 @@ const Banner = ({contentBanner}) =>{
                             `,
 
                             backgroundPosition: `
-                                center,
-                                center,
-                                right center
+                                ${contentBanner.bannerPos}
                             `,
 
                             height: "40rem"

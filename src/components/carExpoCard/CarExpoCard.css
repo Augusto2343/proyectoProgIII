@@ -1,0 +1,17 @@
+.cardEspecif img{
+    height: 5rem;
+    width: 5rem;
+    color: #fff;
+}
+.cardEspecif{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-family: "Orbitron", sans-serif;
+}
+.cardCar {
+    border: 0.4px solid #999;
+}

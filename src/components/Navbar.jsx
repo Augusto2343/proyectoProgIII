@@ -36,8 +36,8 @@ const Navbar = () =>{
                 <div className="menuWBtn">
                 <button onClick={(e) => setIsOpened(!isOpened)}>Escuderías</button>
                     <div className={`menuEscuderias ${isOpened ? "": "hideMenu"}`}>                
-                        <Link className="headerLink">Ford M-sport</Link>
-                        <Link className="headerLink">Hyndai WRT</Link>
+                        <Link to={"/fordwrt"} className="headerLink">Ford M-sport</Link>
+                        <Link to={"/hyundaiwrt"} className="headerLink">Hyndai WRT</Link>
                         <Link to={"/tgrwrt"} className="headerLink">TGR WRT</Link>
                     </div>
                 </div>

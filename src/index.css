@@ -13,6 +13,13 @@ body{
   background-size: cover;
   position: relative;
 }
+.tituloSeccion{
+  font-family: "Orbitron",sans-serif;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
 .bannerContent{
   transform-origin: left;
   background-image: linear-gradient(to right,#0a0a0acb,#0a0a0a00);
