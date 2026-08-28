@@ -70,6 +70,12 @@ body{
 
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
 @media(min-width:1433px){
   .bannContainer{
     height: 550px;
