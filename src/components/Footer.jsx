@@ -15,9 +15,9 @@ const Footer =  () =>{
             <div className="sectFooter">
                 <h3 className="titleSection">Mapa del sitio</h3>
                 <nav className="navFooter">
-                    <Link to="" className="footerLink">Escuderia Ford</Link>
-                    <Link to="" className="footerLink">Escudería TGR-WRT</Link>
-                    <Link to="" className="footerLink">Escudería Hyundai SMWRT</Link>
+                    <Link to="/fordwrt" className="footerLink">Escuderia Ford</Link>
+                    <Link to="/tgrwrt" className="footerLink">Escudería TGR-WRT</Link>
+                    <Link to="/hyundaiwrt" className="footerLink">Escudería Hyundai SMWRT</Link>
                 </nav>
             </div>
         </section>
