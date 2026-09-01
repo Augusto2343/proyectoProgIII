@@ -7,6 +7,7 @@ const ToyotaEsc = () =>{
     const bannerContent = {
         title:"Toyota Gazoo Racing",
         bannerPos:"100% 20%",
+        bannerClass:"tgrwrt",
         bannerSize:`
         100% ,
         100% ,

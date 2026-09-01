@@ -107,7 +107,7 @@ const CarExpoCard = ({datosAuto}) =>{
             </div>
         </div>:
         
-        <div className=" cardCar p-2 m-2 flex flex-col justify-evenly gap-6 items-center rounded-4xl" style= {{
+        <div className=" cardCar p-4 sm:p-2 m-2 flex flex-col justify-evenly gap-6 items-center rounded-4xl" style= {{
                     backgroundImage: `
                                 linear-gradient(
                                         330deg,
@@ -153,7 +153,7 @@ const CarExpoCard = ({datosAuto}) =>{
                                 right center
                             `,
 
-                            height: "40rem"
+                            
                         
             }}>
             <div className="informacion" >

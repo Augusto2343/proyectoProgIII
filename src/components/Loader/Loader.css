@@ -173,3 +173,12 @@
     75%{transform:translateX(-2px);}
     100%{transform:translateX(0);}
 }
+@media (max-width:570px){
+    .traffic-light{
+        padding: 10px;
+    }
+    .light{
+        height: 50px;
+        width: 50px;
+    }
+}

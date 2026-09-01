@@ -35,7 +35,7 @@ const Banner = ({contentBanner}) =>{
         </div>
             </>
             :
-            <div className=" containerBanner w-screen mb-10 grid grid-cols-2" style={{
+            <div className={`${contentBanner.bannerClass} containerBanner w-screen mb-10 grid grid-cols-5`} style={{
                     backgroundImage: `
                                 radial-gradient(
                                     circle at 90% 0%,
@@ -67,12 +67,13 @@ const Banner = ({contentBanner}) =>{
                             `,
 
                             backgroundPosition: `
-                                ${contentBanner.bannerPos}
-                            `,
+                                ${contentBanner.bannerPos},
+                            
+                            
+                                `,
 
-                            height: "40rem"
                         }}>
-                <div className="bannerText pt-34">
+                <div className="bannerText pt-34 col-span-4 lg:col-span-2">
                         <h2 className="bannerTitle text-5xl bold flex flex-col">
                             {contentBanner.title}
                             <span style={{"color":`${contentBanner.enfasisColor}`}}>

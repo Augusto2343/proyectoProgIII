@@ -33,8 +33,8 @@
 
     height: 40rem;
 }
-.imgBanner{
-    
+.containerBanner::before{
+    transform: scaleX(-1);
 }
 .bannerText{
     display: flex;
@@ -83,4 +83,32 @@
     width: 90%;
     height: 90%;
     z-index: 120;
+}
+@media (max-width:780px) {
+    .cardBanner{
+        padding: 0.4rem;
+    }
+    h2{
+        font-size: 2.8rem;
+    }
+}
+@media (max-width:475px){
+    .containerBanner{
+        height: 55rem;
+    }
+    .cards{
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+    
+}
+@media (max-width:1475px){
+    .containerBanner{
+        background-size: cover !important;
+    }
+    .tgrwrt{
+        background-position: 60% 30% !important;
+    }
+
 }

@@ -110,3 +110,7 @@ body{
     padding: 4rem;
   }
 }
+.menuLink{
+  background:linear-gradient(280deg,#4d4d4dfa,#0a0a0a) ;
+  
+}
