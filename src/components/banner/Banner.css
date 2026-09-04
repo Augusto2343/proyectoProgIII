@@ -103,6 +103,11 @@
     }
     
 }
+@media (min-width:1641px){
+    .fordwrt{
+        background-position: 20% 40%;
+    }
+}
 @media (max-width:1475px){
     .containerBanner{
         background-size: cover !important;
@@ -111,4 +116,20 @@
         background-position: 60% 30% !important;
     }
 
+}
+@media (min-width:1475px){
+
+    .tgrwrt{
+        background-position:100% 30% !important;
+    }
+}
+@media (min-width:1347px),(max-width:2200px){
+    .hyundaiwrt{
+        background-position: 20% 100%;
+    }
+}
+@media (min-width:2200px),(max-width:2200px){
+    .hyundaiwrt{
+        background-position: 20% 80%;
+    }
 }

@@ -8,6 +8,7 @@ const HyundaiEsc = () =>{
         title:"Hyundai Shell Mobis",
         enfasisColor:"#3668aa",
         bannerPos:"100% 70%",
+        bannerClass:"hyundaiwrt",
         bannerSize:`
         cover `,
         img:imgBanner,

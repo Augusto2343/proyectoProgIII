@@ -55,7 +55,7 @@ const Navbar = () =>{
                             </div>
                         </div>
                         
-                        <Link className="headerLink">Posiciones del último Rally</Link>
+                        <a href="https://www.wrc.com/en/results-and-standings" target="_blank" className="headerLink">Posiciones del último Rally</a>
                         <Link to="/contacto" className="headerLink">Contacto</Link>
 
                     </div>

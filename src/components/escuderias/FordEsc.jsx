@@ -8,6 +8,8 @@ const FordEsc = () =>{
     const bannerContent = {
         title:"M-Sport Ford",
         enfasisColor:"#0D38AB",
+        bannerClass:"fordwrt",
+
         bannerPos:"100% 40%",
         bannerSize:`
         cover `,
